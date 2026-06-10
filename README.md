@@ -100,7 +100,7 @@ Internal communication tools for production teams and management.
 
 ### Dashboard
 
-![Dashboard](assets/screenshots/report-page.jpg)
+![Dashboard](assets/screenshots/report%20page.jpg)
 
 ### Orders Management
 
