@@ -108,11 +108,11 @@ Internal communication tools for production teams and management.
 
 ### Cutting Entry
 
-![Production Entry](assets/screenshots/Entry%20Page.png)
+![Production Entry](assets/screenshots/Entry%20Page%202.png)
 
 ### Production Entry
 
-![Production Entry](assets/screenshots/Entry%20Page2.png)
+![Cutting Entry](assets/screenshots/Entry%20Page.png)
 
 ### Imcoming Transactions
 
