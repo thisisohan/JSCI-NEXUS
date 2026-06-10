@@ -134,6 +134,10 @@ Internal communication tools for production teams and management.
 
 ![Access Management](assets/screenshots/Access%20management.png)
 
+### Transection Details
+
+![Transection Details](assets/screenshots/Transection%20Details.png)
+
 ---
 
 ## User Roles
