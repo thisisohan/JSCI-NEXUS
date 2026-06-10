@@ -104,23 +104,35 @@ Internal communication tools for production teams and management.
 
 ### Orders Management
 
-![Orders](assets/screenshots/orders.png)
+![Orders](assets/screenshots/order.png)
+
+### Cutting Entry
+
+![Production Entry](assets/screenshots/Entry%20Page.png)
 
 ### Production Entry
 
-![Production Entry](assets/screenshots/production-entry.png)
+![Production Entry](assets/screenshots/Entry%20Page2.png)
+
+### Imcoming Transactions
+
+![Transactions](assets/screenshots/incoming%20transfer.png)
 
 ### Transactions
 
-![Transactions](assets/screenshots/transactions.png)
+![Transactions](assets/screenshots/transection.png)
 
 ### Reports
 
-![Reports](assets/screenshots/reports.png)
+## Confidential. Demo Image will upload soon.
+
+### Departmant Management
+
+![Access Management](assets/screenshots/departmant%20management.png)
 
 ### Access Management
 
-![Access Management](assets/screenshots/access-management.png)
+![Access Management](assets/screenshots/Access%20management.png)
 
 ---
 
