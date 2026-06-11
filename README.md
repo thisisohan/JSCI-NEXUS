@@ -182,6 +182,7 @@ Available Resources:
 Full-stack developer specializing in business applications, workflow automation, dashboards, and enterprise management systems.
 
 - GitHub: https://github.com/thisisohan
+- LinkedIn: https://linkedin.com/in/yourprofile  
 - Email: sohankhan.contact@gmail.com
 
 ---
