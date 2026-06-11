@@ -11,7 +11,7 @@ A real-world production management solution developed to provide complete visibi
 ## Features
 
 - Order Management – Manage buyers, references, quantities, deadlines, and production requirements.
-- Size-Wise Production Tracking – Monitor production quantities by size throughout the workflow.
+- Size-Wise Production Tracking – Monitor production quantities by  size throughout the workflow.
 - Department Workflow Management – Configure departments, workflow sequences, production lines, and transaction rules.
 - Production Transactions – Handle receive, produce, send, reject, return, and outside-factory transactions.
 - Multiple Entry Modes – Support for Size, KG, and Cutting-based production entries.
@@ -48,11 +48,17 @@ A real-world production management solution developed to provide complete visibi
    wp-content/plugins/
    ```
 
-3. Log in to the WordPress Admin Dashboard.
+3. Upload the templates files to:
 
-4. Activate **JSCI NEXUS**.
+   ```text
+   wp-content/themes/child-themes
+   ```
 
-5. The system will automatically create:
+4. Log in to the WordPress Admin Dashboard.
+
+5. Activate **JSCI NEXUS**.
+
+6. The system will automatically create:
    - Database tables
    - User roles and permissions
    - Required settings
@@ -118,6 +124,10 @@ Internal communication tools for production teams and management.
 
 ![Transactions](assets/screenshots/incoming%20transfer.png)
 
+### Departmant Management
+
+![Access Management](assets/screenshots/departmant%20management.png)
+
 ### Transactions
 
 ![Transactions](assets/screenshots/transection.png)
@@ -126,27 +136,20 @@ Internal communication tools for production teams and management.
 
 ## Confidential. Demo Image will upload soon.
 
-### Departmant Management
-
-![Access Management](assets/screenshots/departmant%20management.png)
-
 ### Access Management
+User Roles
+
+- JSCI Employee
+- JSCI Admin
+- JSCI Super Admin
+
+Modify power management and user capabolitys with Access Management
 
 ![Access Management](assets/screenshots/Access%20management.png)
 
 ### Transection Details
 
 ![Transection Details](assets/screenshots/Transection%20Details.png)
-
----
-
-## User Roles
-
-- JSCI Employee
-- JSCI Admin
-- JSCI Super Admin
-
-Administrators automatically receive full system access and management capabilities.
 
 ---
 
