@@ -12,7 +12,7 @@ Supervisors can open an order and see how much each department has produced, sen
 
 <a href="assets/screenshots/report-department-overview.png"><img src="assets/screenshots/report-department-overview.png" alt="Department overview comparing targets, production, stock, and transfers for a sample garment order" width="100%"></a>
 
-*The reports use sample figures and fictional buyer and supplier names. Click any screenshot to open it at full size.*
+*The screenshots use sample figures and fictional buyer and supplier names. Click any image to open the full-resolution capture.*
 
 ## Order workflow
 
@@ -58,6 +58,6 @@ Each transfer is linked to an order, with separate quantities for each garment s
 
 ## About this repository
 
-This repository is a public showcase for an internal application. It contains the README and screenshots. Five images were enlarged from their original captures.
+This repository is a public showcase for an internal application. It contains the README and high-resolution screenshots of the app.
 
 Built and maintained by **Sohan (Md. Sohanur Rahaman Khan)** for JS Cotton International. [GitHub profile](https://github.com/thisisohan) · [LinkedIn](https://linkedin.com/in/thisissohan/)
