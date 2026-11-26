@@ -4,7 +4,7 @@
 
 I built JSCI NEXUS for **JS Cotton International**. Its production teams use it daily to plan orders, record work by department, confirm transfers, and see what still needs to happen before shipment.
 
-[Case study](#case-study) · [Production overview](#production-overview) · [Order workflow](#order-workflow) · [Materials](#materials-and-outside-processing) · [Team settings and notices](#team-settings-and-notices) · [Built with](#built-with) · [Example source code](#example-source-code)
+[Case study](#case-study) · [Production overview](#production-overview) · [Order workflow](#order-workflow) · [Materials](#materials-and-outside-processing) · [Team settings and notices](#team-settings-and-notices) · [Built with](#built-with) · [Example source files](#example-source-files)
 
 ## Case study
 
@@ -100,60 +100,20 @@ JSCI NEXUS uses a custom WordPress plugin and theme, PHP and MySQL on the server
 
 Each transfer is linked to an order, with separate quantities for each garment size. The receiving queue, transaction history, and department reports use those same records.
 
-## Example source code
+## Example source files
 
-**Excerpt from the JSCI NEXUS PHP plugin.** This method checks whether a department has met every target. It walks production events in time order and records when each target is first met.
+These files are selected from the JSCI NEXUS WordPress theme and plugin for code review. They show how the interface is set up and how the plugin loads its components. The full application and the dependencies needed to run it are kept private.
 
-For example, if Cutting needs 500 medium and 400 large pieces, making 520 medium and 380 large still leaves 20 large pieces due. Extra pieces in one size do not count toward another size’s target.
+| File | What it shows |
+| --- | --- |
+| [Theme functions](examples/theme/functions.php) | Theme setup, navigation, asset loading, and integration with WordPress. |
+| [Theme stylesheet](examples/theme/style.css) | Shared styling for the application interface. |
+| [Plugin entry file](examples/plugin/app-nexus.php) | Plugin metadata, component loading, and how App Nexus starts in WordPress. |
 
-<details>
-<summary>View the PHP excerpt</summary>
-
-The method receives a non-empty set of targets. The surrounding application supplies the ordered production events.
-
-```php
-private static function completion_snapshot( int $order_id, int $department_id, array $targets ): array {
-    $events = self::completion_events( $order_id, $department_id );
-    $totals = array_fill_keys( array_keys( $targets ), 0.0 );
-    $completed_at_by_target = [];
-
-    foreach ( $events as $event ) {
-        $key = (string) $event['target_key'];
-
-        if ( ! array_key_exists( $key, $targets ) ) {
-            continue;
-        }
-
-        $totals[ $key ] += max( 0, (float) $event['quantity'] );
-
-        if ( ! isset( $completed_at_by_target[ $key ] ) && $totals[ $key ] >= (float) $targets[ $key ] ) {
-            $completed_at_by_target[ $key ] = (string) $event['activity_at'];
-        }
-    }
-
-    $is_complete = count( $completed_at_by_target ) === count( $targets );
-    $completed_at = '';
-
-    if ( $is_complete ) {
-        $completed_at = max( array_values( $completed_at_by_target ) );
-    }
-
-    return [
-        'is_complete' => $is_complete,
-        'completed_at' => $completed_at,
-        'target_qty' => array_sum( $targets ),
-        'achieved_qty' => array_sum( array_map(
-            static fn( string $key ): float => min( (float) $totals[ $key ], (float) $targets[ $key ] ),
-            array_keys( $targets )
-        ) ),
-    ];
-}
-```
-
-</details>
+The plugin entry file retains its original license notice. [GPL version 2 text](examples/plugin/COPYING)
 
 ## About this repository
 
-This repository is a public showcase for an internal application. It contains screenshots and one PHP excerpt in the README.
+This is the public showcase for an internal application used by JS Cotton International. It includes screenshots and selected source files for review.
 
 Built and maintained by **Sohan (Md. Sohanur Rahaman Khan)** for JS Cotton International. [GitHub profile](https://github.com/thisisohan) · [LinkedIn](https://linkedin.com/in/thisissohan/)
