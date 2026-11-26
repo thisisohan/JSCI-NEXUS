@@ -4,7 +4,15 @@
 
 I built JSCI NEXUS for **JS Cotton International**. Its production teams use it daily to plan orders, record work by department, confirm transfers, and see what still needs to happen before shipment.
 
-[Production overview](#production-overview) · [Order workflow](#order-workflow) · [Materials](#materials-and-outside-processing) · [Team settings and notices](#team-settings-and-notices) · [Built with](#built-with)
+[Case study](#case-study) · [Production overview](#production-overview) · [Order workflow](#order-workflow) · [Materials](#materials-and-outside-processing) · [Team settings and notices](#team-settings-and-notices) · [Built with](#built-with)
+
+## Case study
+
+Cutting can finish a batch while the next department is still waiting for it. I built JSCI NEXUS so a supervisor can see both stages from the same order.
+
+1. **Plan the order.** In the demo, the team plans 23,328 garments, broken down by size, and sets deadlines for each department and for shipment. [Order planning screen](assets/screenshots/order-planning.png)
+2. **Hand off a batch.** Cutting records the pieces it produces and sends a batch to Input. The transfer stays pending while Input checks the quantities by size. If Input accepts the batch, the system records who confirmed it and when. [Incoming transfer screen](assets/screenshots/incoming-transfer.png)
+3. **Find what’s still due.** The supervisor compares what each department has produced, sent, and received. If Cutting is behind, the supervisor opens its target report to see which garment sizes still need work. [Department overview](#department-overview) · [Department targets](#department-targets)
 
 ## Production overview
 
