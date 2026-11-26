@@ -10,7 +10,7 @@ I built JSCI NEXUS for **JS Cotton International**. Its production teams use it 
 
 ### Factory dashboard
 
-<a href="assets/screenshots/reports-dashboard.png"><img src="assets/screenshots/reports-dashboard.png" alt="Factory dashboard with sample production totals, shipment figures, filters, and order progress" width="100%"></a>
+<a href="assets/screenshots/reports-dashboard.png"><img src="assets/screenshots/reports-dashboard.png" alt="Factory dashboard with production totals, order progress, department targets, and outside processing" width="100%"></a>
 
 See production and shipment totals at a glance, then select an order to check its progress and deadline. Click any screenshot to open the full-resolution image.
 
@@ -20,7 +20,7 @@ Supervisors can open an order and see how much each department has produced, sen
 
 <a href="assets/screenshots/report-department-overview.png"><img src="assets/screenshots/report-department-overview.png" alt="Department overview comparing targets, production, stock, and transfers for a sample garment order" width="100%"></a>
 
-*Current report captures use sample figures and fictional buyer and supplier names.*
+*The department and materials reports use sample figures and fictional buyer and supplier names.*
 
 ## Order workflow
 
